@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>❤ LOVE ❤</title>
+  <style>
+  *, body {
+    margin: 0;
+    background: url('./images/moon-night.jpg') no-repeat center;
+    background-size: 100%, 100%;
+    background-attachment: fixed;
+    background-color: #051e34;
+
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif,"SimSun";
+    text-transform: uppercase;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently not supported by any browser */
+  }
+  #descripte, #day, #date {
+    color: #fff;
+    max-width: 480px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    word-break: normal;
+    word-wrap: break-word;
+    margin: 0 auto;
+    animation: breath 5s infinite linear;
+  }
+  #player {
+    display: none;
+  }
+  #descripte {
+    margin-top: 300px;
+  }
+  #day {
+    margin-top: 140px;
+  }
+  @-webkit-keyframes breath {
+    0% { text-shadow: 0 0 20px #0057f7; }
+    50% { text-shadow: 0 0 20px #00bef7; }
+    100% { text-shadow: 0 0 20px #0057f7; }
+  }
+  @-o-keyframes breath {
+    0% { text-shadow: 0 0 20px #0057f7; }
+    50% { text-shadow: 0 0 20px #00bef7; }
+    100% { text-shadow: 0 0 20px #0057f7; }
+  }
+  @-moz-keyframes breath {
+    0% { text-shadow: 0 0 20px #0057f7; }
+    50% { text-shadow: 0 0 20px #00bef7; }
+    100% { text-shadow: 0 0 20px #0057f7; }
+  }
+  @keyframes breath {
+    0% { text-shadow: 0 0 20px #0057f7; }
+    50% { text-shadow: 0 0 20px #00bef7; }
+    100% { text-shadow: 0 0 20px #0057f7; }
+  }
+  </style>
+</head>
+<body>
+  <div id="descripte">we fall in love</div>
+  <div id="day"></div>
+  <div id="date"></div>
+
+  <audio id="player" src="./music/myPrayer.mp3" autoplay="autoplay" loop="loop"></audio>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="./love.js"></script>
+</body>
+</html>
