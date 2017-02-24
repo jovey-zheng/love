@@ -1,5 +1,5 @@
 $(function() {
-  var start = (new Date(2016,5,1)).getTime();
+  var start = (new Date(2016,5-1,1)).getTime();
 
   var tick = setInterval(function(){
 
