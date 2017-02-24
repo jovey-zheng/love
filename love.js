@@ -16,9 +16,9 @@ $(function() {
     var minutes = Math.floor(surplus%(3600*1000)/(60*1000));
     var seconds = Math.floor(surplus%(3600*1000)%(60*1000)/1000);
 
-    hours = hours > 10 ? hours : '0' + hours;
-    minutes = minutes > 10 ? minutes : '0' + minutes;
-    seconds = seconds > 10 ? seconds : '0' + seconds;
+    hours = hours >= 10 ? hours : '0' + hours;
+    minutes = minutes >= 10 ? minutes : '0' + minutes;
+    seconds = seconds >= 10 ? seconds : '0' + seconds;
 
     switch (type) {
       case "days": return days;
